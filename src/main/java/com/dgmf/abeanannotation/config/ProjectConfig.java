@@ -1,6 +1,6 @@
-package com.dgmf.atbeanannotation.config;
+package com.dgmf.abeanannotation.config;
 
-import com.dgmf.atbeanannotation.beans.Vehicule;
+import com.dgmf.abeanannotation.beans.Vehicule;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 /*
