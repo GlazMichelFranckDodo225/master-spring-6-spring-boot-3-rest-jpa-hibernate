@@ -20,7 +20,8 @@ public class ProjectConfig {
     needs to call the annotated Method when it initialized its
     Context and adds the returned value to the Context
     * */
-    @Bean
+    // @Bean
+    @Bean(name = "audiVehicle")
     public Vehicle vehicle1() {
         var vehicle = new Vehicle();
         vehicle.setName("Audi 8");
@@ -28,7 +29,8 @@ public class ProjectConfig {
         return vehicle;
     }
 
-    @Bean
+    // @Bean
+    @Bean(value = "hondaVehicle")
     public Vehicle vehicle2() {
         var vehicle = new Vehicle();
         vehicle.setName("Honda");
@@ -36,7 +38,8 @@ public class ProjectConfig {
         return vehicle;
     }
 
-    @Bean
+    // @Bean
+    @Bean("ferrariVehicle")
     public Vehicle vehicle3() {
         var vehicle = new Vehicle();
         vehicle.setName("Ferrari");
