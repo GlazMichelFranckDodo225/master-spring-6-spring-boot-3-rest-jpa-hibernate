@@ -14,13 +14,15 @@ public class main {
 
         // Fetching the Spring Beans that we want form the Spring Context
         // Vehicle vehicle = context.getBean(Vehicle.class);
-        Vehicle vehicle1 = context.getBean("audiVehicle", Vehicle.class);
+        /*Vehicle vehicle1 = context.getBean("audiVehicle", Vehicle.class);
         Vehicle vehicle2 = context.getBean("hondaVehicle", Vehicle.class);
-        Vehicle vehicle3 = context.getBean("ferrariVehicle", Vehicle.class);
+        Vehicle vehicle3 = context.getBean("ferrariVehicle", Vehicle.class);*/
+        Vehicle vehicle = context.getBean(Vehicle.class);
 
         // Displaying the names of the retrieved Beans
-        System.out.println("Vehicle name from Spring Context is : " + vehicle1.getName());
+        /*System.out.println("Vehicle name from Spring Context is : " + vehicle1.getName());
         System.out.println("Vehicle name from Spring Context is : " + vehicle2.getName());
-        System.out.println("Vehicle name from Spring Context is : " + vehicle3.getName());
+        System.out.println("Vehicle name from Spring Context is : " + vehicle3.getName());*/
+        System.out.println("Vehicle name from Spring Context is : " + vehicle.getName());
     }
 }

@@ -3,6 +3,8 @@ package com.dgmf.bnouniquebeandefinitionexception.config;
 import com.dgmf.bnouniquebeandefinitionexception.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+
 /*
 Spring "@Configuration" Annotation is part of the Spring Core
 Framework. "@Configuration" Annotation indicates that the Class
@@ -39,6 +41,8 @@ public class ProjectConfig {
     }
 
     // @Bean
+    // @Bean("ferrariVehicle")
+    @Primary
     @Bean("ferrariVehicle")
     public Vehicle vehicle3() {
         var vehicle = new Vehicle();
