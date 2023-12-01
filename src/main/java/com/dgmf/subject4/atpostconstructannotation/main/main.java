@@ -1,7 +1,7 @@
-package com.dgmf.catcomponentannotation.main;
+package com.dgmf.subject4.atpostconstructannotation.main;
 
-import com.dgmf.catcomponentannotation.beans.Vehicle;
-import com.dgmf.catcomponentannotation.config.ProjectConfig;
+import com.dgmf.subject4.atpostconstructannotation.beans.Vehicle;
+import com.dgmf.subject4.atpostconstructannotation.config.ProjectConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

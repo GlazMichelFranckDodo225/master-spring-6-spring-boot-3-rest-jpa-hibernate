@@ -1,6 +1,6 @@
-package com.dgmf.abeanannotation.beans;
+package com.dgmf.subject2.nouniquebeandefinitionexception.beans;
 
-public class Vehicule {
+public class Vehicle {
     private String name;
 
     public String getName() {

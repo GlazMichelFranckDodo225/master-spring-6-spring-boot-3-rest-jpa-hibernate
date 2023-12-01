@@ -1,6 +1,6 @@
-package com.dgmf.bnouniquebeandefinitionexception.beans;
+package com.dgmf.subject1.atbeanannotation.beans;
 
-public class Vehicle {
+public class Vehicule {
     private String name;
 
     public String getName() {

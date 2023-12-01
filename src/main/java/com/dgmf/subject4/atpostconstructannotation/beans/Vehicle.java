@@ -1,6 +1,5 @@
-package com.dgmf.catcomponentannotation.beans;
+package com.dgmf.subject4.atpostconstructannotation.beans;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component

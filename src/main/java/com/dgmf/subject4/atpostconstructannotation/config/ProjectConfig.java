@@ -1,10 +1,7 @@
-package com.dgmf.catcomponentannotation.config;
+package com.dgmf.subject4.atpostconstructannotation.config;
 
-import com.dgmf.catcomponentannotation.beans.Vehicle;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 
 /*
 Spring "@Configuration" Annotation is part of the Spring Core

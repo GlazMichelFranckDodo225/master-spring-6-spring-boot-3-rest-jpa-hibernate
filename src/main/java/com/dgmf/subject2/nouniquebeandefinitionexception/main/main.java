@@ -1,7 +1,7 @@
-package com.dgmf.bnouniquebeandefinitionexception.main;
+package com.dgmf.subject2.nouniquebeandefinitionexception.main;
 
-import com.dgmf.bnouniquebeandefinitionexception.beans.Vehicle;
-import com.dgmf.bnouniquebeandefinitionexception.config.ProjectConfig;
+import com.dgmf.subject2.nouniquebeandefinitionexception.beans.Vehicle;
+import com.dgmf.subject2.nouniquebeandefinitionexception.config.ProjectConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

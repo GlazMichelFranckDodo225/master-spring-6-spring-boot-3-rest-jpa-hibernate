@@ -1,8 +1,10 @@
-package com.dgmf.abeanannotation.config;
+package com.dgmf.subject2.nouniquebeandefinitionexception.config;
 
-import com.dgmf.abeanannotation.beans.Vehicule;
+import com.dgmf.subject2.nouniquebeandefinitionexception.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+
 /*
 Spring "@Configuration" Annotation is part of the Spring Core
 Framework. "@Configuration" Annotation indicates that the Class
@@ -20,21 +22,32 @@ public class ProjectConfig {
     needs to call the annotated Method when it initialized its
     Context and adds the returned value to the Context
     * */
-    @Bean
-    public Vehicule vehicule() {
-        var vehicule = new Vehicule();
-        vehicule.setName("Audi 8");
+    // @Bean
+    @Bean(name = "audiVehicle")
+    public Vehicle vehicle1() {
+        var vehicle = new Vehicle();
+        vehicle.setName("Audi 8");
 
-        return vehicule;
+        return vehicle;
     }
 
-    @Bean
-    public String hello() {
-        return "Hello world !";
+    // @Bean
+    @Bean(value = "hondaVehicle")
+    public Vehicle vehicle2() {
+        var vehicle = new Vehicle();
+        vehicle.setName("Honda");
+
+        return vehicle;
     }
 
-    @Bean
-    public Integer number() {
-        return 16;
+    // @Bean
+    // @Bean("ferrariVehicle")
+    @Primary
+    @Bean("ferrariVehicle")
+    public Vehicle vehicle3() {
+        var vehicle = new Vehicle();
+        vehicle.setName("Ferrari");
+
+        return vehicle;
     }
 }
