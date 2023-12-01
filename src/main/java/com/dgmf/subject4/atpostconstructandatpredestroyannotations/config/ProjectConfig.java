@@ -1,4 +1,4 @@
-package com.dgmf.subject4.atpostconstructannotation.config;
+package com.dgmf.subject4.atpostconstructandatpredestroyannotations.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

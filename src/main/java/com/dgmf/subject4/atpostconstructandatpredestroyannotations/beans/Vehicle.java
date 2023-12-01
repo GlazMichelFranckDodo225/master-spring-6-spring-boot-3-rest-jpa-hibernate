@@ -1,6 +1,7 @@
-package com.dgmf.subject4.atpostconstructannotation.beans;
+package com.dgmf.subject4.atpostconstructandatpredestroyannotations.beans;
 
 import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -20,6 +21,11 @@ public class Vehicle {
     @PostConstruct // Inspired and Borrows by Spring from Java EE
     public void initialize() {
         this.name = "Honda";
+    }
+
+    @PreDestroy
+    public void destroy() {
+        System.out.println("Destroying Vehicle Bean ...");
     }
 
     public void printHello() {
