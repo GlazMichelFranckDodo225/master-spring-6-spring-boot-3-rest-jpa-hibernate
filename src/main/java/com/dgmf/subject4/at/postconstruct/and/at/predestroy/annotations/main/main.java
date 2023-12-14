@@ -1,7 +1,7 @@
-package com.dgmf.subject4.atpostconstructandatpredestroyannotations.main;
+package com.dgmf.subject4.at.postconstruct.and.at.predestroy.annotations.main;
 
-import com.dgmf.subject4.atpostconstructandatpredestroyannotations.beans.Vehicle;
-import com.dgmf.subject4.atpostconstructandatpredestroyannotations.config.ProjectConfig;
+import com.dgmf.subject4.at.postconstruct.and.at.predestroy.annotations.beans.Vehicle;
+import com.dgmf.subject4.at.postconstruct.and.at.predestroy.annotations.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class main {

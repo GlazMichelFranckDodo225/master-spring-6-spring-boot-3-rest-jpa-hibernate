@@ -1,4 +1,4 @@
-package com.dgmf.subject3.atcomponentannotation.beans;
+package com.dgmf.subject3.at.component.annotation.beans;
 
 import org.springframework.stereotype.Component;
 

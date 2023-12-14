@@ -1,4 +1,4 @@
-package com.dgmf.subject1.atbeanannotation.beans;
+package com.dgmf.subject1.at.bean.annotation.beans;
 
 public class Vehicule {
     private String name;

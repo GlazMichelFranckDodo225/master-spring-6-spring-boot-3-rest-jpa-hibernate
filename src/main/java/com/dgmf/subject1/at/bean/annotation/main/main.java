@@ -1,7 +1,7 @@
-package com.dgmf.subject1.atbeanannotation.main;
+package com.dgmf.subject1.at.bean.annotation.main;
 
-import com.dgmf.subject1.atbeanannotation.beans.Vehicule;
-import com.dgmf.subject1.atbeanannotation.config.ProjectConfig;
+import com.dgmf.subject1.at.bean.annotation.beans.Vehicule;
+import com.dgmf.subject1.at.bean.annotation.config.ProjectConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

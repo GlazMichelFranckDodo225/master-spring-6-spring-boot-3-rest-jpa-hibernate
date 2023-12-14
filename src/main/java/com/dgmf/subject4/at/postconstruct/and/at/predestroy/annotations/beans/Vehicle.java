@@ -1,4 +1,4 @@
-package com.dgmf.subject4.atpostconstructandatpredestroyannotations.beans;
+package com.dgmf.subject4.at.postconstruct.and.at.predestroy.annotations.beans;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;

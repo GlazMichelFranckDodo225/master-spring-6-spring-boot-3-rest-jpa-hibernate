@@ -1,4 +1,4 @@
-package com.dgmf.subject3.atcomponentannotation.config;
+package com.dgmf.subject3.at.component.annotation.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
