@@ -4,7 +4,7 @@ import com.dgmf.subject4.at.postconstruct.and.at.predestroy.annotations.beans.Ve
 import com.dgmf.subject4.at.postconstruct.and.at.predestroy.annotations.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         // Initialization of Spring IoC Container and Spring Context and
         // instanciation of the Spring Context
