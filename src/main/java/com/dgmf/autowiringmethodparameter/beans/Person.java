@@ -1,4 +1,4 @@
-package com.dgmf.at.autowiringmethodparameter.beans;
+package com.dgmf.autowiringmethodparameter.beans;
 
 public class Person {
     private String name;

@@ -1,8 +1,8 @@
 package com.dgmf;
 
-import com.dgmf.at.autowiringmethodparameter.beans.Person;
-import com.dgmf.at.autowiringmethodparameter.beans.Vehicle;
-import com.dgmf.at.autowiringmethodparameter.config.ProjectConfig;
+import com.dgmf.autowiringmethodparameter.beans.Person;
+import com.dgmf.autowiringmethodparameter.beans.Vehicle;
+import com.dgmf.autowiringmethodparameter.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class ApplicationAutowiringMethodParameter {

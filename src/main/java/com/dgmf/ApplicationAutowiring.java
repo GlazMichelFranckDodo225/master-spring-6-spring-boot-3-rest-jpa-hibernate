@@ -1,11 +1,11 @@
 package com.dgmf;
 
-import com.dgmf.at.autowiring.beans.Person;
-import com.dgmf.at.autowiring.beans.Vehicle;
-import com.dgmf.at.autowiring.config.ProjectConfig;
+import com.dgmf.autowiring.beans.Person;
+import com.dgmf.autowiring.beans.Vehicle;
+import com.dgmf.autowiring.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class ApplicationAtAutowire {
+public class ApplicationAutowiring {
 	public static void main(String[] args) {
 		var context =
 				new AnnotationConfigApplicationContext(ProjectConfig.class);

@@ -1,7 +1,7 @@
-package com.dgmf.at.autowiringmethodparameter.config;
+package com.dgmf.autowiring.config;
 
-import com.dgmf.at.autowiringmethodparameter.beans.Person;
-import com.dgmf.at.autowiringmethodparameter.beans.Vehicle;
+import com.dgmf.autowiring.beans.Person;
+import com.dgmf.autowiring.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -31,10 +31,10 @@ public class ProjectConfig {
     }
 
     @Bean
-    public Person person(Vehicle vehicle) {
+    public Person person() {
         Person person = new Person();
         person.setName("Lucy");
-        person.setVehicle(vehicle);
+        person.setVehicle(vehicle());
 
         return person;
     }

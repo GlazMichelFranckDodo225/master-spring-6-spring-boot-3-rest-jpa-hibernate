@@ -1,4 +1,4 @@
-package com.dgmf.at.autowiring.beans;
+package com.dgmf.autowiring.beans;
 
 public class Person {
     private String name;
