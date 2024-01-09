@@ -1,4 +1,4 @@
-package com.dgmf.at.autowired.classfields.config;
+package com.dgmf.at.autowiredclassfields.config;
 
 import com.dgmf.autowiring.beans.Person;
 import com.dgmf.autowiring.beans.Vehicle;

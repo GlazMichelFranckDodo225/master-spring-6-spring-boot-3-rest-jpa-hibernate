@@ -1,4 +1,4 @@
-package com.dgmf.at.autowired.classfields.beans;
+package com.dgmf.at.autowiredsettermethods.beans;
 
 import org.springframework.stereotype.Component;
 

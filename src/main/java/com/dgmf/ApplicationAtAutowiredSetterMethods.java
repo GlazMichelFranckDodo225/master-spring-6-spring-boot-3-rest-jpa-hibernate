@@ -1,11 +1,11 @@
 package com.dgmf;
 
-import com.dgmf.at.autowiredclassfields.beans.Person;
-import com.dgmf.at.autowiredclassfields.beans.Vehicle;
-import com.dgmf.at.autowiredclassfields.config.ProjectConfig;
+import com.dgmf.at.autowiredsettermethods.beans.Person;
+import com.dgmf.at.autowiredsettermethods.beans.Vehicle;
+import com.dgmf.at.autowiredsettermethods.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class ApplicationAtAutowiredClassFields {
+public class ApplicationAtAutowiredSetterMethods {
 	public static void main(String[] args) {
 		var context =
 				new AnnotationConfigApplicationContext(ProjectConfig.class);
