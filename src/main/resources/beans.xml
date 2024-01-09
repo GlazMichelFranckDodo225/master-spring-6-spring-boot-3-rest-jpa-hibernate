@@ -7,7 +7,7 @@
 
     <bean
             id="vehicle"
-            class="com.dgmf.subject6.creating.beans.xml.configurations.beans.Vehicule"
+            class="com.dgmf.beans.xml.config.Vehicule"
     >
         <property name="name" value="Honda"></property>
     </bean>
