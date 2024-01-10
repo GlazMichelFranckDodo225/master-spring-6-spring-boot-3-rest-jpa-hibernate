@@ -9,14 +9,9 @@ public class Person {
     private final Vehicle vehicle;
 
     @Autowired
-    public Person(Vehicle vehicle1) {
+    public Person(Vehicle vehicle) {
         System.out.println("Person Bean Created by Spring ...");
-        this.vehicle = vehicle1;
-    }
-
-    @Override
-    public String toString() {
-        return "Person Name is : " + name;
+        this.vehicle = vehicle;
     }
 
     public String getName() {

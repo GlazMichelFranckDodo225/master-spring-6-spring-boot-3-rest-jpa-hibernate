@@ -5,6 +5,7 @@ import com.dgmf.autowiringtypesandsteps.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 /*
 Spring "@Configuration" Annotation is part of the Spring Core
@@ -41,6 +42,7 @@ public class ProjectConfig {
     }
 
     @Bean
+    @Primary
     public Vehicle vehicle3() {
         Vehicle veh = new Vehicle();
         veh.setName("Ferrari");
