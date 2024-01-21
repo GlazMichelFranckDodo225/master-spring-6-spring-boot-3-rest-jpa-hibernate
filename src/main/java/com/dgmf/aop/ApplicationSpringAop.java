@@ -1,9 +1,8 @@
 package com.dgmf.aop;
 
-import com.dgmf.beans.Person;
-import com.dgmf.beans.Vehicle;
-import com.dgmf.config.ProjectConfig;
-import com.dgmf.services.VehicleServices;
+import com.dgmf.aop.config.ProjectConfig;
+import com.dgmf.aop.entity.Song;
+import com.dgmf.aop.services.VehicleServices;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -14,25 +13,21 @@ public class ApplicationSpringAop {
 		var context =
 				new AnnotationConfigApplicationContext(ProjectConfig.class);
 
-		// Retrieving Bean from Spring Context
-		VehicleServices vehicleServices1 = context.getBean(VehicleServices.class);
-		VehicleServices vehicleServices2 = context.getBean(
-				"vehicleServices",
-				VehicleServices.class
-		);
+		var vehicleServices = context.getBean(VehicleServices.class);
+		System.out.println(vehicleServices.getClass());
 
-		// Outputs
-		System.out.println("Hashcode of the Bean vehicleServices1 : " +
-				vehicleServices1.hashCode());
-		System.out.println("Hashcode of the Bean vehicleServices2 : " +
-				vehicleServices2.hashCode());
+		Song song = new Song();
+		song.setTitle("Blank Space");
+		song.setSingerName("Taylor Swift");
 
-		if(vehicleServices1 == vehicleServices2) {
-			System.out.println("VehicleServices Bean is a Singleton Scope Bean");
-		} else {
-			System.out.println("VehicleServices Bean is a Prototype Scope Bean");
-
-		}
+		//  boolean vehicleStarted = true;
+		boolean vehicleStarted = false;
+		String moveVehicleStatus =
+				vehicleServices.moveVehicle(vehicleStarted);
+		String playMusicStatus =
+				vehicleServices.playMusic(vehicleStarted, song);
+		String applyBrakeStatus =
+				vehicleServices.applyBrake(vehicleStarted);
 	}
 
 }

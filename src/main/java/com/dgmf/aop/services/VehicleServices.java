@@ -1,29 +1,82 @@
 package com.dgmf.aop.services;
 
-import com.dgmf.interfaces.Speakers;
-import com.dgmf.interfaces.Tyres;
+import com.dgmf.aop.entity.Song;
+import com.dgmf.aop.interfaces.Speakers;
+import com.dgmf.aop.interfaces.Tyres;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.config.BeanDefinition;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import java.time.Duration;
+import java.time.Instant;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 @Component
-// Default Spring Bean Scope ==> Can be Omitted
-// @Scope(BeanDefinition.SCOPE_SINGLETON)
-@Scope(BeanDefinition.SCOPE_PROTOTYPE)
 public class VehicleServices {
+    private Logger logger =
+            Logger.getLogger(VehicleServices.class.getName());
     @Autowired
     private Speakers speakers;
     private Tyres tyres;
 
-    public void playMusic() {
-        String music = speakers.makeSound();
-        System.out.println(music);
+    public String playMusic(boolean vehicleStarted, Song song) {
+        Instant start = Instant.now();
+        logger.info("Method Execution Start");
+        String music = null;
+        if(vehicleStarted) {
+            music = speakers.makeSound(song);
+        } else {
+            logger.log(
+                    Level.SEVERE,
+                    "Vehicle Not Started to Perform the Operation"
+            );
+        }
+        logger.info("Method Execution End");
+        Instant finish = Instant.now();
+        long timeElapsed = Duration.between(start, finish).toMillis();
+        logger.info("Time Took to Execute the Method : " + timeElapsed);
+
+        return music;
     }
 
-    public void moveVehicle() {
-        String status = tyres.rotate();
-        System.out.println(status);
+    public String moveVehicle(boolean vehicleStarted) {
+        Instant start = Instant.now();
+        logger.info("Method Execution Start");
+        String status = null;
+        if(vehicleStarted) {
+            status = tyres.rotate();
+        } else {
+            logger.log(
+                    Level.SEVERE,
+                    "Vehicle Not Started to Perform the Operation"
+            );
+        }
+        logger.info("Method Execution End");
+        Instant finish = Instant.now();
+        long timeElapsed = Duration.between(start, finish).toMillis();
+        logger.info("Time Took to Execute the Method : " + timeElapsed);
+
+        return status;
+    }
+
+    public String applyBrake(boolean vehicleStarted) {
+        Instant start = Instant.now();
+        logger.info("Method Execution Start");
+        String status = null;
+        if(vehicleStarted) {
+            status = tyres.stop();
+        } else {
+            logger.log(
+                    Level.SEVERE,
+                    "Vehicle Not Started to Perform the Operation"
+            );
+        }
+        logger.info("Method Execution End");
+        Instant finish = Instant.now();
+        long timeElapsed = Duration.between(start, finish).toMillis();
+        logger.info("Time Took to Execute the Method : " + timeElapsed);
+
+        return status;
     }
 
     public Speakers getSpeakers() {

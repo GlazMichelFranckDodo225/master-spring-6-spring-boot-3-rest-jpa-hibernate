@@ -15,13 +15,9 @@ Application.
 // the content of this class because of "@Configuration" Annotation
 @Configuration
 @ComponentScan(basePackages = {
-        "com.dgmf.interfaces.impl.speakers",
-        "com.dgmf.interfaces.impl.tyres",
-        "com.dgmf.services"
-})
-@ComponentScan(basePackageClasses = {
-        com.dgmf.beans.Vehicle.class,
-        com.dgmf.beans.Person.class
+        "com.dgmf.aop.interfaces.impl.speakers",
+        "com.dgmf.aop.interfaces.impl.tyres",
+        "com.dgmf.aop.services"
 })
 public class ProjectConfig {
 }
