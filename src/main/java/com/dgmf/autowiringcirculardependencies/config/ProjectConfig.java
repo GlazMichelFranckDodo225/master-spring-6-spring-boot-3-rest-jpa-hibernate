@@ -16,7 +16,7 @@ Application.
 // the Spring IoC container, Spring IoC Container will scan all
 // the content of this class because of "@Configuration" Annotation
 @Configuration
-@ComponentScan(basePackages = "com.dgmf.autowiringcirculardependencies")
+@ComponentScan(basePackages = "com.dgmf.autowiringcirculardependencies.beans")
 public class ProjectConfig {
     /*
     "@Bean" Annotation lets Spring IoC Container know that it

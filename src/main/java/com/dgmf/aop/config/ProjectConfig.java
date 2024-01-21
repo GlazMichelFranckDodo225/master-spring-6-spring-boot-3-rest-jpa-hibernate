@@ -1,8 +1,5 @@
-package com.dgmf.at.autowiredclassfields.config;
+package com.dgmf.aop.config;
 
-import com.dgmf.autowiring.beans.Person;
-import com.dgmf.autowiring.beans.Vehicle;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -17,6 +14,14 @@ Application.
 // the Spring IoC container, Spring IoC Container will scan all
 // the content of this class because of "@Configuration" Annotation
 @Configuration
-@ComponentScan(basePackages = "com.dgmf.at.autowiredclassfields")
+@ComponentScan(basePackages = {
+        "com.dgmf.interfaces.impl.speakers",
+        "com.dgmf.interfaces.impl.tyres",
+        "com.dgmf.services"
+})
+@ComponentScan(basePackageClasses = {
+        com.dgmf.beans.Vehicle.class,
+        com.dgmf.beans.Person.class
+})
 public class ProjectConfig {
 }

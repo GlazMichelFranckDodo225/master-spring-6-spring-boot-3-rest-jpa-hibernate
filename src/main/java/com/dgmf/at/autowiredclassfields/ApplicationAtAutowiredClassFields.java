@@ -1,14 +1,16 @@
-package com.dgmf;
+package com.dgmf.at.autowiredclassfields;
 
-import com.dgmf.autowiringmethodparameter.beans.Person;
-import com.dgmf.autowiringmethodparameter.beans.Vehicle;
-import com.dgmf.autowiringmethodparameter.config.ProjectConfig;
+import com.dgmf.at.autowiredclassfields.beans.Person;
+import com.dgmf.at.autowiredclassfields.beans.Vehicle;
+import com.dgmf.at.autowiredclassfields.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class ApplicationAutowiringMethodParameter {
+public class ApplicationAtAutowiredClassFields {
 	public static void main(String[] args) {
 		var context =
-				new AnnotationConfigApplicationContext(ProjectConfig.class);
+				new AnnotationConfigApplicationContext(
+						ProjectConfig.class
+				);
 
 		// Retrieving Bean from Spring Context
 		Person person = context.getBean(Person.class);

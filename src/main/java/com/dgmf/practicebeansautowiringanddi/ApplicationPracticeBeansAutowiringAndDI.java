@@ -1,4 +1,4 @@
-package com.dgmf;
+package com.dgmf.practicebeansautowiringanddi;
 
 import com.dgmf.practicebeansautowiringanddi.config.ProjectConfig;
 import com.dgmf.practicebeansautowiringanddi.beans.Person;

@@ -1,4 +1,4 @@
-package com.dgmf;
+package com.dgmf.at.bean;
 
 import com.dgmf.at.bean.beans.Vehicule;
 import com.dgmf.at.bean.config.ProjectConfig;

@@ -1,4 +1,4 @@
-package com.dgmf;
+package com.dgmf.at.postconstructpredestroy;
 
 import com.dgmf.at.postconstructpredestroy.beans.Vehicle;
 import com.dgmf.at.postconstructpredestroy.config.ProjectConfig;

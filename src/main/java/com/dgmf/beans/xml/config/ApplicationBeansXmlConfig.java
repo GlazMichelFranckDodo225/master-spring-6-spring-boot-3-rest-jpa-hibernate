@@ -1,4 +1,4 @@
-package com.dgmf;
+package com.dgmf.beans.xml.config;
 
 import com.dgmf.beans.xml.config.Vehicule;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

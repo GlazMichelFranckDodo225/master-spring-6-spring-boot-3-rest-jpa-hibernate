@@ -1,4 +1,4 @@
-package com.dgmf;
+package com.dgmf.context.registerBean.method;
 
 import com.dgmf.context.registerBean.method.beans.Vehicle;
 import com.dgmf.context.registerBean.method.config.ProjectConfig;

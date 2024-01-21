@@ -1,4 +1,4 @@
-package com.dgmf;
+package com.dgmf.nouniquebeandefinitionexception;
 
 import com.dgmf.nouniquebeandefinitionexception.beans.Vehicle;
 import com.dgmf.nouniquebeandefinitionexception.config.ProjectConfig;
