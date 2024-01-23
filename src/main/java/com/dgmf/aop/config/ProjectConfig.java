@@ -2,6 +2,7 @@ package com.dgmf.aop.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /*
 Spring "@Configuration" Annotation is part of the Spring Core
@@ -15,9 +16,11 @@ Application.
 // the content of this class because of "@Configuration" Annotation
 @Configuration
 @ComponentScan(basePackages = {
-        "com.dgmf.aop.interfaces.impl.speakers",
-        "com.dgmf.aop.interfaces.impl.tyres",
+        "com.dgmf.aop.interfaces.impl",
+        "com.dgmf.aop.aspects",
         "com.dgmf.aop.services"
 })
+// To Enable Spring AOP Features inside the Application
+@EnableAspectJAutoProxy
 public class ProjectConfig {
 }

@@ -20,8 +20,8 @@ public class VehicleServices {
     private Tyres tyres;
 
     public String playMusic(boolean vehicleStarted, Song song) {
-        Instant start = Instant.now();
-        logger.info("Method Execution Start");
+        /*Instant start = Instant.now();
+        logger.info("Method Execution Start");*/
         String music = null;
         if(vehicleStarted) {
             music = speakers.makeSound(song);
@@ -31,17 +31,17 @@ public class VehicleServices {
                     "Vehicle Not Started to Perform the Operation"
             );
         }
-        logger.info("Method Execution End");
+        /*logger.info("Method Execution End");
         Instant finish = Instant.now();
         long timeElapsed = Duration.between(start, finish).toMillis();
-        logger.info("Time Took to Execute the Method : " + timeElapsed);
+        logger.info("Time Took to Execute the Method : " + timeElapsed);*/
 
         return music;
     }
 
     public String moveVehicle(boolean vehicleStarted) {
-        Instant start = Instant.now();
-        logger.info("Method Execution Start");
+        /*Instant start = Instant.now();
+        logger.info("Method Execution Start");*/
         String status = null;
         if(vehicleStarted) {
             status = tyres.rotate();
@@ -51,17 +51,17 @@ public class VehicleServices {
                     "Vehicle Not Started to Perform the Operation"
             );
         }
-        logger.info("Method Execution End");
+        /*logger.info("Method Execution End");
         Instant finish = Instant.now();
         long timeElapsed = Duration.between(start, finish).toMillis();
-        logger.info("Time Took to Execute the Method : " + timeElapsed);
+        logger.info("Time Took to Execute the Method : " + timeElapsed);*/
 
         return status;
     }
 
     public String applyBrake(boolean vehicleStarted) {
-        Instant start = Instant.now();
-        logger.info("Method Execution Start");
+        /*Instant start = Instant.now();
+        logger.info("Method Execution Start");*/
         String status = null;
         if(vehicleStarted) {
             status = tyres.stop();
@@ -71,10 +71,10 @@ public class VehicleServices {
                     "Vehicle Not Started to Perform the Operation"
             );
         }
-        logger.info("Method Execution End");
+        /*logger.info("Method Execution End");
         Instant finish = Instant.now();
         long timeElapsed = Duration.between(start, finish).toMillis();
-        logger.info("Time Took to Execute the Method : " + timeElapsed);
+        logger.info("Time Took to Execute the Method : " + timeElapsed);*/
 
         return status;
     }
