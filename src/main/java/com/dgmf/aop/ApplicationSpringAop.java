@@ -21,7 +21,7 @@ public class ApplicationSpringAop {
 		song.setSingerName("Taylor Swift");
 
 		//  boolean vehicleStarted = true;
-		boolean vehicleStarted = false;
+		boolean vehicleStarted = true;
 		String moveVehicleStatus =
 				vehicleServices.moveVehicle(vehicleStarted);
 		String playMusicStatus =

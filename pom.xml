@@ -7,6 +7,7 @@
     <groupId>com.dgmf</groupId>
     <artifactId>master-spring-6-spring-boot-3-rest-jpa-hibernate</artifactId>
     <version>1.0-SNAPSHOT</version>
+    
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -37,6 +38,8 @@
             <artifactId>spring-aspects</artifactId>
             <version>6.0.11</version>
         </dependency>
+
     </dependencies>
+
 
 </project>
