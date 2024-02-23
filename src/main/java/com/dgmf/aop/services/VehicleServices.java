@@ -59,7 +59,12 @@ public class VehicleServices {
 
         return status;*/
 
+        // In Case of Exception
+        // throw new NullPointerException("Null Pointer Exception Occurred.");
+
+        // If Successful
         return tyres.rotate();
+
     }
 
     public String applyBrake(boolean vehicleStarted) {
