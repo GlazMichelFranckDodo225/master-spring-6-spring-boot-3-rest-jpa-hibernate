@@ -24,10 +24,10 @@ public class ApplicationSpringAop {
 		boolean vehicleStarted = true;
 		String moveVehicleStatus =
 				vehicleServices.moveVehicle(vehicleStarted);
-//		String playMusicStatus =
-//				vehicleServices.playMusic(vehicleStarted, song);
-//		String applyBrakeStatus =
-//				vehicleServices.applyBrake(vehicleStarted);
+		String playMusicStatus =
+				vehicleServices.playMusic(vehicleStarted, song);
+		String applyBrakeStatus =
+				vehicleServices.applyBrake(vehicleStarted);
 	}
 
 }

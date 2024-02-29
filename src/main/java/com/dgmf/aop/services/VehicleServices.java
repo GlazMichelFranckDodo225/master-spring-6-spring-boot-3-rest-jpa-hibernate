@@ -1,14 +1,11 @@
 package com.dgmf.aop.services;
 
+import com.dgmf.aop.annotationstyle.interfaces.LogAspect;
 import com.dgmf.aop.entity.Song;
 import com.dgmf.aop.interfaces.Speakers;
 import com.dgmf.aop.interfaces.Tyres;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.time.Duration;
-import java.time.Instant;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @Component
@@ -19,6 +16,7 @@ public class VehicleServices {
     private Speakers speakers;
     private Tyres tyres;
 
+    @LogAspect
     public String playMusic(boolean vehicleStarted, Song song) {
         /*Instant start = Instant.now();
         logger.info("Method Execution Start");
